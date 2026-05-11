@@ -1,0 +1,160 @@
+{
+  "info": {
+    "_postman_id": "eaec0db4-7093-41d5-b986-3f87d5972eb4",
+    "name": "teste",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40800320"
+  },
+  "item": [
+    {
+      "name": "https://api.raizesnordeste.com.br/v1/pedidos/123.",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.raizesnordeste.com.br/v1/pedidos",
+          "protocol": "https",
+          "host": [
+            "api",
+            "raizesnordeste",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "pedidos"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "https://api.raizesnordeste.com.br/v1/pedidos/123.",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.raizesnordeste.com.br/v1/pedidos/123",
+              "protocol": "https",
+              "host": [
+                "api",
+                "raizesnordeste",
+                "com",
+                "br"
+              ],
+              "path": [
+                "v1",
+                "pedidos",
+                "123"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": "{\n  \"id_pedido\": 123,\n  \"cliente_cpf\": \"280.188.3XX-XX\",\n  \"status\": \"Em Preparo\",\n  \"origem\": \"App\",\n  \"valor_total\": 30.90,\n  \"itens\": [\n    { \"produto\": \"Cuscuz\", \"quantidade\": 1, \"preco\": 25.90 },\n    { \"produto\": \"Café\", \"quantidade\": 1, \"preco\": 5.00 }\n  ]\n}"
+        },
+        {
+          "name": "https://api.raizesnordeste.com.br/v1/pedidos/123.",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.raizesnordeste.com.br/v1/pedidos",
+              "protocol": "https",
+              "host": [
+                "api",
+                "raizesnordeste",
+                "com",
+                "br"
+              ],
+              "path": [
+                "v1",
+                "pedidos"
+              ]
+            }
+          },
+          "status": "Service Unavailable",
+          "code": 503,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": "{\n  \"erro\": \"Gateway de Pagamento Offline\",\n  \"codigo\": 503,\n  \"mensagem\": \"Não foi possível processar o pagamento. O sistema realizou o rollback do pedido para garantir a integridade dos dados.\",\n  \"timestamp\": \"2026-05-10T14:35:00Z\"\n}"
+        },
+        {
+          "name": "https://api.raizesnordeste.com.br/v1/pedidos/123.",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.raizesnordeste.com.br/v1/pedidos",
+              "protocol": "https",
+              "host": [
+                "api",
+                "raizesnordeste",
+                "com",
+                "br"
+              ],
+              "path": [
+                "v1",
+                "pedidos"
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": "{\n  \"status\": \"Acesso Negado\",\n  \"causa\": \"Termo de Consentimento não aceito\",\n  \"lgpd_conformidade\": false,\n  \"mensagem\": \"Para prosseguir com o programa de fidelidade, é obrigatório o aceite explícito da política de privacidade.\"\n}"
+        }
+      ]
+    }
+  ]
+}
